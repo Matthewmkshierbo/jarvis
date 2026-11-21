@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050b16">
+  <title>JARVIS M | Moshier Industries</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">M</span><div><strong>MOSHiER INDUSTRIES</strong><small>ADVANCED SYSTEMS DIVISION</small></div></div>
+    <div class="status"><span class="pulse"></span> SYSTEM ONLINE <span class="divider">|</span> LOCAL PROTOTYPE</div>
+    <time id="clock">--:--:--</time>
+  </header>
+
+  <main class="shell">
+    <section class="hero">
+      <div class="eyebrow">PERSONAL AI INTERFACE <span>•</span> VERSION 0.1</div>
+      <h1>JARVIS <em>M</em></h1>
+      <p class="subtitle">JARVIS MOSHIER <span>//</span> YOUR COMMAND. MY INTELLIGENCE.</p>
+      <div class="orb-wrap" aria-label="JARVIS animated status visual">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+        <div class="core"><div class="core-inner">M</div></div>
+        <div class="scan-line"></div>
+      </div>
+      <div class="listening" id="system-state"><span class="pulse"></span> STANDBY — AWAITING COMMAND</div>
+    </section>
+
+    <section class="console panel">
+      <div class="panel-head"><div><span class="tiny-dot"></span> JARVIS COMMUNICATION CHANNEL</div><span id="mic-status">MICROPHONE IDLE</span></div>
+      <div id="conversation" class="conversation" aria-live="polite">
+        <div class="message jarvis"><b>JARVIS M</b><p>Good day. JARVIS M systems are online. How may I assist you?</p></div>
+      </div>
+      <form id="command-form" class="command-form">
+        <input id="command-input" autocomplete="off" placeholder="Enter a command for JARVIS M..." aria-label="Command">
+        <button class="send" type="submit">SEND ↗</button>
+      </form>
+      <div class="controls">
+        <button id="voice-button" class="primary">◉ ACTIVATE VOICE</button>
+        <button id="stop-button" class="secondary">■ STOP SPEAKING</button>
+        <button id="clear-button" class="secondary">↺ CLEAR LOG</button>
+      </div>
+      <p class="hint">Try: “Hello Jarvis”, “What time is it?”, “What can you do?” or “Search for robotics”.</p>
+    </section>
+
+    <section class="modules">
+      <article class="module panel"><span class="module-icon">◷</span><small>LOCAL TIME</small><strong id="time-card">--:--</strong><span id="date-card">Loading date...</span></article>
+      <article class="module panel"><span class="module-icon">⌁</span><small>VOICE ENGINE</small><strong id="voice-card">READY</strong><span>Browser speech services</span></article>
+      <article class="module panel"><span class="module-icon">◇</span><small>ASSISTANT STATUS</small><strong class="green">ONLINE</strong><span>Command mode active</span></article>
+    </section>
+    <footer>JARVIS M © <span id="year"></span> MOSHIER INDUSTRIES <span>•</span> INDEPENDENT PERSONAL ASSISTANT PROTOTYPE</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
